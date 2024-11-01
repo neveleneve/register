@@ -129,6 +129,9 @@ return [
     'setting' => 'Setting',
     'submit' => 'Submit',
 
+    'registered_success' => 'Successfully registered',
+    'login_to_continue' => 'Please log in to continue',
+
     // new
     'account_status' => 'Account Status',
     'add_balance' => 'Add Balance',

@@ -106,6 +106,10 @@ class RegisterController extends Controller {
             'user_id' => $user->id
         ]);
 
-        return redirect()->to(env('MAIN_APP'));
+        return redirect()->to(env('MAIN_APP'))->with([
+            'title' => __('message.registered_success'),
+            'text' => __('message.login_to_continue'),
+            'icon' => 'success',
+        ]);
     }
 }
