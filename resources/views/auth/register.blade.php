@@ -123,7 +123,8 @@
         <div class="row justify-content-center mb-5">
             @forelse ($image as $item)
                 <div class="col-md-8 {{ $loop->last ? null : 'mb-3' }}">
-                    <img src="{{ env('MAIN_APP ') . '/assets/images/banner/' . $item->image_name }}" class="d-block w-100">
+                    <img src="{{ env('MAIN_APP', 'https://testing.frdhsym.space') . '/assets/images/banner/' . $item->image_name }}"
+                        class="d-block w-100">
                 </div>
             @empty
             @endforelse
